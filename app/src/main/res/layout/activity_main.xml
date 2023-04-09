@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="20dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/miulogo"></ImageView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign in to your account"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textColor="@color/black"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_layout"
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/error_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/error"></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Email address (required)"
+            android:labelFor="@+id/email_field"
+            android:layout_marginBottom="5dp"></TextView>
+        <EditText
+            android:id="@+id/email_field"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/border_layout"></EditText>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Password (required)"
+            android:labelFor="@+id/password_field"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"></TextView>
+
+        <EditText
+            android:id="@+id/password_field"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/border_layout"></EditText>
+
+        <TextView
+            android:id="@+id/forget_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Forget Password?"
+            android:textAlignment="textEnd"
+            android:autoLink="all"
+            android:clickable="true"
+            android:onClick="forgotPassword"></TextView>
+
+        <Button
+            android:id="@+id/sing_in_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Sign In"
+            android:textAllCaps="false"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="@color/blue_700"
+            android:onClick="signIn"></Button>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Don't have an account?"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/black"></TextView>
+
+        <Button
+            android:id="@+id/create_new_account_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Create a new account"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/cardview_light_background"></Button>
+
+    </LinearLayout>
+
+
+</LinearLayout>

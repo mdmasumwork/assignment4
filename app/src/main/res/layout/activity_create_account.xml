@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="20dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/miulogo"></ImageView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create your account"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textColor="@color/black"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_layout"
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:layout_marginTop="15dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="First Name *"
+            android:labelFor="@+id/first_name"
+            android:layout_marginBottom="5dp"></TextView>
+        <EditText
+            android:id="@+id/first_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/border_layout"></EditText>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Last Name *"
+            android:labelFor="@+id/last_name"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"></TextView>
+        <EditText
+            android:id="@+id/last_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/border_layout"></EditText>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Email address *"
+            android:labelFor="@+id/email_address"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"></TextView>
+        <EditText
+            android:id="@+id/email_address"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/border_layout"></EditText>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Password *"
+            android:labelFor="@+id/password"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"></TextView>
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPassword"
+            android:background="@drawable/border_layout"></EditText>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Create Account"
+            android:textAllCaps="false"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/blue_700"
+            android:id="@+id/createAccount"
+            android:onClick="createAccountHandler"></Button>
+
+    </LinearLayout>
+
+
+</LinearLayout>
